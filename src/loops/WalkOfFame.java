@@ -8,12 +8,32 @@ import org.jointheleague.graphical.robot.Robot;
 
 public class WalkOfFame {
 	public static void main(String[] args) {
-		Robot rob = new Robot();
-		// 1. Set the X position of the robot so that it starts on the left. 
+		Robot r2d2 = new Robot();
+		r2d2.setPenColor(255,255,50);
+		// 1. Set the X position of the robot so that it starts on the left.
+		r2d2.setX(500);
+		r2d2.setY(350);
 		// You also need to show the robot to see the result of this line.
-
+		
 		// 2. Make the robot draw a star shape. Hint: 144.
-
+		
+		for(int i =0; i<100; i++ ) {
+		//r2d2.turn(20);
+		r2d2.setSpeed(50);
+		r2d2.penDown();
+		r2d2.move(30);
+		r2d2.turn(144);
+		r2d2.move(30);
+		r2d2.turn(144);
+		r2d2.move(30);
+		r2d2.turn(144);
+		r2d2.move(30);
+		r2d2.turn(144);
+		r2d2.move(30);
+		r2d2.turn(215-90);
+		r2d2.penUp();
+		r2d2.move(50);
+		}
 		// 3. Set the size of the star to 30.
 
 		/** THE CHALLENGE: **/
