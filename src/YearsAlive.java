@@ -2,9 +2,9 @@ import javax.swing.JOptionPane;
 
 public class YearsAlive {
 	public static void main(String[] args) {
-		String year = JOptionPane.showInputDialog(null, "What year were you born?");
-		JOptionPane.showMessageDialog(null, "You are"  );
-		
+		for(int i=2006; i<2020; i++) {
+		System.out.println(i);
+		}
 		
 	
 	}
